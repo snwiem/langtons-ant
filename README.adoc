@@ -1,0 +1,20 @@
+= Langton's Ant
+
+This is a simple example project to learn Python development. The initial idea was to have a real life
+example to implement a fully fledged python project, including packages, modules, tests, mocks and at least
+documentation based on ASCII-Doc.
+
+== The universal Turing machine
+
+Details can be found https://en.wikipedia.org/wiki/Langton%27s_ant[here]
+
+== Tools and Frameworks
+
+* python 3.9
+* pytest
+* pytest-mock (mocker)
+* pygame
+
+
+
+

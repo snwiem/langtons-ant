@@ -34,28 +34,28 @@ def test_remove_cell():
 
 def test_adjust_dimensions():
     grid = Grid()
-    grid._adjust_dimensions(3, 5)
+    grid.adjust_dimensions(3, 5)
     assert grid._min_x == 0 and grid._max_x == 3
     assert grid._min_y == 0 and grid._max_y == 5
-    grid._adjust_dimensions(-2, 7)
+    grid.adjust_dimensions(-2, 7)
     assert grid._min_x == -2 and grid._max_x == 3
     assert grid._min_y == 0 and grid._max_y == 7
-    grid._adjust_dimensions(-1, -4)
+    grid.adjust_dimensions(-1, -4)
     assert grid._min_x == -2 and grid._max_x == 3
     assert grid._min_y == -4 and grid._max_y == 7
 
 
 def test_width_and_height():
     grid = Grid()
-    grid._adjust_dimensions(3, 5)
-    assert grid.width == 3
-    assert grid.height == 5
-    grid._adjust_dimensions(-2, 7)
-    assert grid.width == 5
-    assert grid.height == 7
-    grid._adjust_dimensions(-1, -4)
-    assert grid.width == 5
-    assert grid.height == 11
+    grid.adjust_dimensions(3, 5)
+    assert grid.width == 4
+    assert grid.height == 6
+    grid.adjust_dimensions(-2, 7)
+    assert grid.width == 6
+    assert grid.height == 8
+    grid.adjust_dimensions(-1, -4)
+    assert grid.width == 6
+    assert grid.height == 12
 
 
 def test_cell_color():

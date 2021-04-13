@@ -4,6 +4,10 @@ This is a simple example project to learn Python development. The initial idea w
 example to implement a fully fledged python project, including packages, modules, tests, mocks and at least
 documentation based on ASCII-Doc.
 
+During development, I noticed that it would be nice to have graphical interpretation of the ant's run on the grid.
+
+For that purpose I implemented a simple visualization using pygame engine.
+
 == The universal Turing machine
 
 Details can be found https://en.wikipedia.org/wiki/Langton%27s_ant[here]
@@ -15,6 +19,19 @@ Details can be found https://en.wikipedia.org/wiki/Langton%27s_ant[here]
 * pytest-mock (mocker)
 * pygame
 
+== To run
+
+`$ python main.py`
+
+You will be presented a square window of 800 pixels each dimension. The grid the ant knows about is dynamically
+created within this viewport. The following key commands are available
+
+|=====
+| `ESC` | Close window and exit simulation
+| `SPACE` | Pause simulation
+| `+` | Increase framerate
+| `-` | Decrease framerate
+|=====
 
 
 
